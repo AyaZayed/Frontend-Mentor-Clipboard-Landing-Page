@@ -35,7 +35,7 @@ p {
   margin-bottom: 5rem;
 }
 
-.intro {
+.section:first-of-type {
   background: url(../images/bg-header-desktop.png) no-repeat;
   background-size: cover;
 }
@@ -108,20 +108,80 @@ p {
   margin: 0 1rem;
 }
 
-.supercharge .supercharge-features .feature img {
-  margin-bottom: 1.3rem;
+.supercharge .supercharge-features .feature-text {
+  margin-top: 3rem;
 }
 
 .supercharge .supercharge-features .feature h3 {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .supercharge .supercharge-features p {
   max-width: 25rem;
 }
 
+.companies {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.companies img {
+  margin: 0 3rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 3rem;
+  background-color: #f5f6f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-links .links-section {
+  margin-right: 5rem;
+}
+
+footer .footer-links a {
+  color: var(--Dark-Grayish-Blue);
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+footer .footer-links a:hover {
+  color: var(--Strong-Cyan);
+}
+
+footer .social-icons a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer .social-icons a i {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.5rem;
+}
+
+footer .social-icons a i:hover {
+  color: var(--Strong-Cyan);
+}
+
 .attribution {
-  font-size: 11px;
+  margin-top: 4rem;
+  font-size: 14px;
   text-align: center;
 }
 

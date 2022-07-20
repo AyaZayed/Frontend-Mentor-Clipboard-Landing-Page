@@ -40,8 +40,19 @@ p {
   background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+  .section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .section-paragraph {
+    width: 100%;
+  }
+}
+
 .intro p {
-  margin-bottom: 2rem;
+  margin-bottom: 3.6rem;
   max-width: 38rem;
   text-align: center;
 }
@@ -76,6 +87,23 @@ p {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 768px) {
+  .section:first-of-type {
+    background: url(../images/bg-header-mobile.png) no-repeat;
+    background-size: cover;
+  }
+  .intro .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro button {
+    margin: 0.7rem 0;
+    min-width: 100%;
+  }
+}
+
 .track .track-features {
   display: flex;
   justify-content: space-between;
@@ -98,6 +126,31 @@ p {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .track .track-features {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .track .track-features .image img {
+    width: 100%;
+  }
+  .track .track-features .features-text {
+    padding: 4rem 0 0 0;
+  }
+  .track .track-features .feature p {
+    min-width: 100%;
+  }
+  .access {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .access img {
+    width: 100%;
+  }
+}
+
 .supercharge .supercharge-features {
   display: flex;
   justify-content: space-evenly;
@@ -106,6 +159,10 @@ p {
 
 .supercharge .supercharge-features .feature {
   margin: 0 1rem;
+}
+
+.supercharge .supercharge-features .feature img {
+  height: 2.3rem;
 }
 
 .supercharge .supercharge-features .feature-text {
@@ -120,14 +177,36 @@ p {
   max-width: 25rem;
 }
 
+@media screen and (max-width: 768px) {
+  .supercharge .supercharge-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .supercharge .supercharge-features .feature:not(:first-of-type) {
+    margin: 4rem 0 0 0;
+  }
+}
+
 .companies {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  margin: 3rem;
 }
 
 .companies img {
   margin: 0 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .companies {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .companies img:not(:first-of-type) {
+    margin: 5rem 0 0 0;
+  }
 }
 
 footer {
@@ -150,14 +229,14 @@ footer .footer-links {
 }
 
 footer .footer-links .links-section {
-  margin-right: 5rem;
+  margin-right: 4rem;
 }
 
 footer .footer-links a {
   color: var(--Dark-Grayish-Blue);
   text-decoration: none;
   margin: 0 1rem;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   display: block;
 }
 
@@ -177,6 +256,24 @@ footer .social-icons a i {
 
 footer .social-icons a i:hover {
   color: var(--Strong-Cyan);
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    text-align: center;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .footer-links {
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 0;
+  }
+  footer .footer-links .links-section {
+    margin: 0;
+  }
 }
 
 .attribution {

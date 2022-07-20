@@ -19,7 +19,7 @@ This is a solution to the [clipboard landing page challenge on frontend mentor](
 
 ### Links
 
-- Solution URL: [Clipboard Landing Page](https://www.frontendmentor.io/solutions/fylo-storage-card-component-rNe_PouprZ)
+- Solution URL: [Clipboard Landing Page](https://www.frontendmentor.io/solutions/clipboard-landing-page-oLUlh_0GT5)
 
 ## My process
 
